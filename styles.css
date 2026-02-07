@@ -109,8 +109,32 @@ h1 {
   gap: 18px;
 }
 
+.contentbox-feature {
+  padding: 20px;
+}
+
+.contentbox-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.subtle-link {
+  font-family: "IBM Plex Mono", "SFMono-Regular", monospace;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.subtle-link:hover {
+  color: var(--accent-2);
+}
+
 .embed-frame {
-  margin-top: 16px;
   border-radius: 16px;
   overflow: hidden;
   border: 1px solid var(--border);
@@ -119,14 +143,10 @@ h1 {
 
 .embed-frame iframe {
   width: 100%;
-  height: 820px;
+  height: 900px;
   border: 0;
   display: block;
   background: #0b0b0d;
-}
-
-.embed-link {
-  margin-top: 12px;
 }
 
 h2,
@@ -189,6 +209,6 @@ ul {
   }
 
   .embed-frame iframe {
-    height: 620px;
+    height: 680px;
   }
 }
