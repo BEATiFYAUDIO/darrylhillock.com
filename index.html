@@ -3,73 +3,75 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Darryl Hillock — Musician</title>
-    <meta name="description" content="Darryl Hillock — musician and creator. Professional work, releases, and verified links." />
+    <title>Darryl Hillock | Musician, Creator, Builder</title>
+    <meta
+      name="description"
+      content="Official website of Darryl Hillock: musician, creator, and builder focused on independent distribution and creator-owned infrastructure."
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg"></div>
-    <header class="hero">
-      <div class="hero-inner">
-        <div class="eyebrow">Darryl Hillock</div>
-        <h1>Musician · Creator · Builder</h1>
-        <p class="lead">
-          Professional musician and founder at Beatify Group. I build and ship
-          creator-first tools for trust and distribution.
-        </p>
-        <div class="cta-row">
-          <a class="btn" href="https://beatify.me/blessedrthe" target="_blank" rel="noopener">Beatify Profile</a>
-          <a class="btn ghost" href="https://soundcloud.com/darryl-hillock" target="_blank" rel="noopener">SoundCloud</a>
-        </div>
-      </div>
-      <div class="hero-media">
-        <img class="hero-stage" src="stage.jpg" alt="Darryl Hillock performing live" />
-        <img class="hero-profile" src="profile.jpg" alt="Portrait of Darryl Hillock" />
+    <div class="bg-layer" aria-hidden="true"></div>
+    <div class="grid-noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-row">
+        <a class="brand" href="#top">Darryl Hillock</a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#release">Certifyd Profile</a>
+          <a href="#work">Work</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
     </header>
 
-    <main class="container">
-      <section class="card">
-        <h2>About</h2>
-        <p>
-          I work at the intersection of music, identity, and decentralized
-          distribution. My focus is helping creators share and monetize their
-          work directly, with trust and transparency.
-        </p>
-      </section>
-
-      <section class="grid">
-        <div class="card">
-          <h3>Listen</h3>
-          <ul>
-            <li><a href="https://soundcloud.com/darryl-hillock" target="_blank" rel="noopener">SoundCloud · Darryl Hillock</a></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Verified Links</h3>
-          <ul>
-            <li><a href="https://beatify.me/blessedrthe" target="_blank" rel="noopener">Beatify · blessedrthe</a></li>
-            <li><a href="https://beatifygroup.com/beatify-link/" target="_blank" rel="noopener">Beatify Group</a></li>
-            <li><a href="https://beatifyaudio.github.io/fever-growth-site/" target="_blank" rel="noopener">Fever Growth Site</a></li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Work</h3>
-          <p>
-            Building ContentBox — a local-first creator tool for direct sharing
-            and sales.
+    <main id="top">
+      <section class="hero container">
+        <div class="hero-copy">
+          <p class="kicker">Official Site</p>
+          <h1>Musician. Creator. Builder of independent systems.</h1>
+          <p class="lead">
+            I create music and ship infrastructure that helps creators publish,
+            verify, and monetize directly.
           </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#release">Open Certifyd Profile</a>
+            <a class="btn btn-ghost" href="https://beatifygroup.com/beatify-link/" target="_blank" rel="noopener">Verified Links</a>
+          </div>
+          <div class="hero-stats" aria-label="Highlights">
+            <div>
+              <strong>Creator-first</strong>
+              <span>Independent publishing focus</span>
+            </div>
+            <div>
+              <strong>Live + Digital</strong>
+              <span>Performance and product execution</span>
+            </div>
+            <div>
+              <strong>Built in Public</strong>
+              <span>Transparent iteration and delivery</span>
+            </div>
+          </div>
         </div>
+
+        <figure class="hero-visual" aria-label="Darryl Hillock profile and performance">
+          <img class="hero-stage" src="stage.jpg" alt="Darryl Hillock performing live on stage" />
+          <img class="hero-profile" src="profile.jpg" alt="Portrait of Darryl Hillock" />
+        </figure>
       </section>
 
-      <section class="card contentbox-feature">
-        <div class="contentbox-header">
-          <h2>Featured release</h2>
-          <a class="subtle-link" href="https://certifyd.darrylhillock.com/u/blessedrthe" target="_blank" rel="noopener">
-            Open full player →
+      <section id="release" class="container panel featured-release">
+        <div class="release-head">
+          <div>
+            <p class="kicker">Front And Center</p>
+            <h2>Certifyd Profile</h2>
+          </div>
+          <a class="inline-link" href="https://certifyd.darrylhillock.com/u/blessedrthe" target="_blank" rel="noopener">
+            Open full profile
           </a>
         </div>
-        <div class="embed-frame">
+        <div class="embed-shell">
           <iframe
             title="ContentBox buy link"
             loading="lazy"
@@ -80,21 +82,48 @@
         </div>
       </section>
 
-      <section class="card">
-        <h2>Notes</h2>
-        <p>
-          For official updates and verified social profiles, use the Beatify
-          link above. For music, SoundCloud is the fastest place to listen.
-        </p>
+      <section id="about" class="container section-grid">
+        <article class="panel panel-about">
+          <h2>About</h2>
+          <p>
+            I work at the intersection of music, identity, and distribution. My
+            focus is helping creators keep ownership over their work and value
+            flow through direct systems.
+          </p>
+        </article>
+        <article class="panel panel-links">
+          <h3>Verified Links</h3>
+          <ul>
+            <li><a href="https://beatifygroup.com/beatify-link/" target="_blank" rel="noopener">Beatify Group</a></li>
+            <li><a href="https://beatifyaudio.github.io/fever-growth-site/" target="_blank" rel="noopener">Fever Growth Site</a></li>
+            <li><a href="https://buy.darrylhillock.com/buy/cml8rqxvo000kukxwq99l0ogc" target="_blank" rel="noopener">Direct Buy / Player</a></li>
+          </ul>
+        </article>
+        <article id="work" class="panel panel-work">
+          <h3>Current Work</h3>
+          <p>
+            Building tools for creator identity, receipts, and direct value
+            movement through ContentBox and related systems.
+          </p>
+        </article>
+      </section>
+
+      <section id="contact" class="container panel panel-contact">
+        <h2>Contact</h2>
+        <p>For collaborations, bookings, or strategic partnerships.</p>
+        <a class="btn btn-primary" href="mailto:darryl@beatifygroup.com">darryl@beatifygroup.com</a>
       </section>
     </main>
 
-    <footer class="footer">
-      <div>© Darryl Hillock</div>
-      <div class="footer-links">
-        <a href="https://beatify.me/blessedrthe" target="_blank" rel="noopener">Beatify</a>
-        <a href="https://soundcloud.com/darryl-hillock" target="_blank" rel="noopener">SoundCloud</a>
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <span>© <span id="year"></span> Darryl Hillock</span>
+        <a href="https://beatifygroup.com/beatify-link/" target="_blank" rel="noopener">Beatify Group</a>
       </div>
     </footer>
+
+    <script>
+      document.getElementById("year").textContent = String(new Date().getFullYear());
+    </script>
   </body>
 </html>
