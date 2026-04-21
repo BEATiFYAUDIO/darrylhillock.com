@@ -43,16 +43,16 @@ a { color: inherit; text-decoration: none; }
 }
 
 .bg::before {
-  background: url("assets/me.jpg") center 18% / cover no-repeat;
-  opacity: 0.17;
-  filter: blur(6px) saturate(1.05) brightness(0.58);
-  transform: scale(1.08);
+  background: url("assets/me-stage.jpg") center 20% / cover no-repeat;
+  opacity: 0.26;
+  filter: saturate(1.08) brightness(0.62);
+  transform: scale(1.04);
 }
 
 .bg::after {
   background:
-    linear-gradient(180deg, rgba(6, 8, 14, 0.32) 0%, rgba(8, 10, 18, 0.74) 48%, rgba(8, 11, 20, 0.9) 100%),
-    radial-gradient(760px 520px at 70% 12%, rgba(245, 185, 92, 0.12), transparent 70%);
+    linear-gradient(180deg, rgba(7, 9, 15, 0.34) 0%, rgba(8, 10, 18, 0.72) 50%, rgba(8, 11, 20, 0.88) 100%),
+    radial-gradient(760px 520px at 70% 12%, rgba(245, 185, 92, 0.14), transparent 70%);
 }
 
 .page {
@@ -96,11 +96,11 @@ a { color: inherit; text-decoration: none; }
 
 .hero-photo {
   width: 100%;
-  max-width: 230px;
+  max-width: 260px;
   height: 300px;
   display: block;
   object-fit: cover;
-  object-position: center 24%;
+  object-position: 48% 28%;
   border-radius: 18px;
   border: 1px solid rgba(241, 191, 103, 0.44);
   box-shadow:
@@ -269,10 +269,18 @@ p:last-child { margin-bottom: 0; }
     margin-top: 2px;
   }
   .hero-photo {
-    width: clamp(200px, 58vw, 260px);
+    width: min(100%, 540px);
     height: auto;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 3;
+    object-position: 50% 22%;
     max-width: 100%;
+  }
+
+  .bg::before {
+    opacity: 0.34;
+    filter: saturate(1.1) brightness(0.62);
+    background-position: 52% 10%;
+    transform: scale(1.02);
   }
 }
 
@@ -313,9 +321,10 @@ p:last-child { margin-bottom: 0; }
   }
 
   .hero-photo {
-    width: clamp(200px, 68vw, 260px);
+    width: 100%;
     height: auto;
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 5 / 4;
+    object-position: 50% 22%;
     max-width: 100%;
     border-radius: 12px;
   }
@@ -338,7 +347,9 @@ p:last-child { margin-bottom: 0; }
 
 @media (max-width: 420px) {
   .hero-photo {
-    width: clamp(190px, 72vw, 240px);
+    width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1;
+    object-position: 49% 18%;
   }
 }
